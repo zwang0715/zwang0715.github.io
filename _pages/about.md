@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: NIH/NHLBI K99/R00 Postdoctoral Fellow · Department of Genetics and Development, <a href="https://www.cuimc.columbia.edu/">Columbia University Irving Medical Center</a>
 

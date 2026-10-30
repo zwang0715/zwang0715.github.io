@@ -1,0 +1,91 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site customizations (Zhaoning Wang)
+ * This file overrides the theme's assets/css/main.scss (al_folio_core 1.0.15).
+ * Everything above this block is copied unchanged from the theme;
+ * only the rules below are added.
+ ******************************************************************************/
+
+/* Blue accent color: darker blue on the light theme, lighter blue on the dark theme */
+:root {
+  --global-theme-color: #1f5fbf;
+  --global-hover-color: #1f5fbf;
+  --global-code-bg-color: rgba(31, 95, 191, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #6aa8ff;
+  --global-hover-color: #6aa8ff;
+}
+
+/* Arial everywhere (including the address block, which the theme sets to monospace) */
+html,
+body,
+.navbar,
+.post,
+.publications,
+.profile .more-info,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Name in the navbar and on the About page: no bold */
+.navbar-brand .font-weight-bold,
+.post-title .font-weight-bold {
+  font-weight: normal;
+}
+
+/* Year headings on the Publications page: same blue, clearly visible */
+.publications h2.bibliography {
+  color: var(--global-theme-color);
+}
+
+/* Capitalize the "selected publications" heading on the About page */
+.post h2 a[href$="/publications/"] {
+  text-transform: capitalize;
+}
+
+/* Make **bold** text in page content render bold */
+.post strong,
+.post b {
+  font-weight: 700;
+}

@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: "* Co-first authors. A complete, up-to-date list is on <a href=\"https://scholar.google.com/citations?user=J_KWTmsAAAAJ\">Google Scholar</a>."
+description: "* Co-first authors. For a complete, up-to-date list, see my Google Scholar profile."
 nav: true
 nav_order: 1
 ---

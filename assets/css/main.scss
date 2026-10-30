@@ -68,9 +68,8 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Name in the navbar and on the About page: no bold */
-.navbar-brand .font-weight-bold,
-.post-title .font-weight-bold {
+/* Name in the navbar: no bold (the About page title is handled in _layouts/about.liquid) */
+.navbar-brand .font-weight-bold {
   font-weight: normal;
 }
 
@@ -79,9 +78,9 @@ h6 {
   color: var(--global-theme-color);
 }
 
-/* Capitalize the "selected publications" heading on the About page */
-.post h2 a[href$="/publications/"] {
-  text-transform: capitalize;
+/* My name in publication author lists: bold */
+.publications ol.bibliography li .author > em {
+  font-weight: 700;
 }
 
 /* Make **bold** text in page content render bold */

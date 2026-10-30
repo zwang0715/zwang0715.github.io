@@ -2,16 +2,13 @@
 layout: about
 title: About
 permalink: /
-subtitle: NIH/NHLBI K99/R00 Postdoctoral Fellow · Department of Genetics and Development, <a href="https://www.cuimc.columbia.edu/">Columbia University Irving Medical Center</a>
-
-profile:
-  align: right
-  image: # add a photo later: put it in assets/img/ and write its file name here (e.g., prof_pic.jpg)
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Hammer Health Sciences Center, 14-1410</p>
-    <p>701 West 168th Street</p>
-    <p>New York, NY 10032</p>
+subtitle: >
+  NIH/NHLBI K99/R00 Postdoctoral Fellow<br>
+  Department of Genetics and Development<br>
+  <a href="https://www.cuimc.columbia.edu/">Columbia University Irving Medical Center</a><br>
+  Hammer Health Sciences Center, 14-1410<br>
+  701 West 168th Street<br>
+  New York, NY 10032
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
